@@ -7,14 +7,14 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: false })); 
 app.use(bodyParser.json()); 
 app.use(express.json());
-const port = 3000; // Adjust port number as needed
+const port = 3306; // Adjust port number as needed
 
 // Database credentials
 const pool = mysql.createPool({
-  host: 'localhost',
-  user: 'root',
-  password: '',
-  database: 'management'
+  host: 'b45u0ecukzpafgkphmii-mysql.services.clever-cloud.com',
+  user: 'uykr2jlusvmf6geb',
+  password: 'IJjVTa0sEYomIpPZ6jTS',
+  database: 'b45u0ecukzpafgkphmii'
 });
 
 // Middleware to verify token
